@@ -25,5 +25,64 @@ namespace consoleapp_tarde
             Cidade = cidade;
 
         }
+        public int getId()
+        { 
+            return Id;
+        }
+
+        public string getCEP()
+        {
+            return CEP;
+        }
+
+        public string getRua()
+        {
+            return Rua;
+        }
+
+        public string getNumero()
+        {
+            return Numero;
+        }
+
+        public string getBairro()
+        { 
+            return Bairro;
+        }
+
+        public string getCidade()
+        {
+            return Cidade;
+        }
+
+        public void setId(int id)
+        {
+            Id = id;
+        }
+
+        public void setCEP(string cep) 
+        { 
+            CEP = cep;
+        }
+
+        public void setRua(string rua)
+        {
+            Rua = rua;
+        }
+
+        public void setNumero(string numero)
+        {
+            Numero = numero;
+        }
+
+        public void setBairro(string bairro)
+        {
+            Bairro = bairro;
+        }
+
+        public void setCidade(string cidade)
+        {
+            Cidade = cidade;
+        }
     }
 }
