@@ -9,13 +9,13 @@ namespace consoleapp_tarde
     internal class Produto
     {
         private int Id;
-        private string Descrição;
+        private string Descricao;
         private decimal Valor;
 
         public Produto(int id, string descricao, decimal valor)
         {
             Id = id;
-            Descrição = descricao;
+            Descricao = descricao;
             Valor = valor;
         }
 
@@ -23,13 +23,28 @@ namespace consoleapp_tarde
         {
             return Id;
         }
-        public string getDescrição()
+        public string getDescricao()
         {
-            return Descrição;
+            return Descricao;
         }
         public decimal getValor()
         {
             return Valor;
+        }
+       
+        public void setDescricao(string descricao)
+        { 
+            Descricao = descricao;
+        }
+       
+        public void setId(int id) 
+        {
+            Id = id;
+        }
+       
+        public void setValor(decimal valor)
+        {
+            Valor = valor;
         }
     }
 }
