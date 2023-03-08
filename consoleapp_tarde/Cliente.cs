@@ -8,6 +8,10 @@ namespace consoleapp_tarde
 {
     internal class Cliente
     {
+        private int Id;
+        private string Nome;
+        private string Telefone;
+
         public Cliente(int id, string nome, string telefone)
         {
             Id = id;
