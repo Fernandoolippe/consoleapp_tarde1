@@ -14,5 +14,35 @@ namespace consoleapp_tarde
             Nome = nome;
             Telefone = telefone;
         }
+
+        public int getId()
+        {
+            return Id;
+        }
+
+        public string getNome()
+        {
+            return Nome;
+        }
+
+        public string getTelefone()
+        {
+            return Telefone;
+        }
+
+        public void setNome(string nome)
+        {
+            Nome = nome;
+        }
+
+        public void setId(int id)
+        {
+            Id = id;
+        }
+
+        public void setTelefone(string telefone)
+        {
+            Telefone = telefone;
+        }
     }
 }
