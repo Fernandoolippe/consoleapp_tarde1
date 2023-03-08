@@ -18,5 +18,18 @@ namespace consoleapp_tarde
             Descrição = descricao;
             Valor = valor;
         }
+
+        public int getId()
+        {
+            return Id;
+        }
+        public string getDescrição()
+        {
+            return Descrição;
+        }
+        public decimal getValor()
+        {
+            return Valor;
+        }
     }
 }
