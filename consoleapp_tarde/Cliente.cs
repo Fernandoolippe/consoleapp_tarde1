@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +12,28 @@ namespace consoleapp_tarde
         private int Id;
         private string Nome;
         private string Telefone;
+        private Endereco Endereco;
 
-        public Cliente(int id, string nome, string telefone)
+        public Cliente(int id, string nome, string telefone, Endereco endereco)
         {
             Id = id;
             Nome = nome;
             Telefone = telefone;
+            Endereco = endereco;
+        }
+
+        public string ExibirDados()
+        {
+            return Nome + " Telefone " + Telefone + Endereco.EnderecoCompleto();
+        }
+
+        public Endereco getEndereco()
+        {
+            return Endereco;
+        }
+        public void setEndereco(Endereco endereco)
+        {
+            Endereco = endereco;
         }
 
         public int getId()

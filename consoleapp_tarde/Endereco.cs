@@ -11,11 +11,11 @@ namespace consoleapp_tarde
         private int Id;
         private string CEP;
         private string Rua;
-        private string Numero;
+        private int Numero;
         private string Bairro;
         private string Cidade;
 
-        public Endereco(int id, string cep, string rua, string numero, string bairro, string cidade)
+        public Endereco(int id, string cep, string rua, int numero, string bairro, string cidade)
         {
             Id = id;
             CEP = cep;
@@ -24,6 +24,17 @@ namespace consoleapp_tarde
             Bairro = bairro;
             Cidade = cidade;
 
+        }
+        public void AtualizarEndereco(string rua,int numero, string bairro)
+        {
+            setBairro(bairro);
+            setNumero(numero);
+            setRua(rua);
+        }
+
+        public string EnderecoCompleto()
+        {
+            return "Rua " + Rua + " "+ "Numero " + Numero + " " + "Bairro " + Bairro + " "+ "Cidade " + Cidade + " ";
         }
         public int getId()
         { 
@@ -40,7 +51,7 @@ namespace consoleapp_tarde
             return Rua;
         }
 
-        public string getNumero()
+        public int getNumero()
         {
             return Numero;
         }
@@ -70,7 +81,7 @@ namespace consoleapp_tarde
             Rua = rua;
         }
 
-        public void setNumero(string numero)
+        public void setNumero(int numero)
         {
             Numero = numero;
         }
